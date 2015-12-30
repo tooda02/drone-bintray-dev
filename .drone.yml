@@ -11,6 +11,7 @@ build:
     - echo buildDate=$buildDate
     - go get
     - go build -ldflags="-s -w -X main.buildDate '$buildDate'"
+    - ls -l
     - go test
 
 publish:
