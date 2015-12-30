@@ -12,6 +12,8 @@ build:
     - go get
     - go build -ldflags="-s -w -X main.buildDate '$buildDate'"
     - go test
+	- ln -s drone-bintray-dev drone-bintray
+	- ls -l
 
 publish:
   docker:
