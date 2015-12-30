@@ -1,0 +1,34 @@
+{
+    "repo": {
+        "owner": "octocat",
+        "name": "hello-world",
+        "full_name": "octocat/hello-world"
+    },
+    "build": {
+        "number": 1,
+        "status": "success"
+    },
+    "workspace": {
+        "path": "testData"
+    },
+    "vargs": {
+        "username": "tooda02",
+        "api_key": "a7588f963a4afa6ac6634ee0aa882fdb4245f63b",
+		"branch": "myBranch",
+		"debug": true,
+		"insecure": true,
+        "artifacts": [
+           {
+              "file": "testConfig.json",
+              "owner": "shippedrepos",
+              "type": "bin",
+              "repository": "Bootstrap",
+              "package": "shipped-bootstrap",
+              "version": "0.1",
+              "target": "testConfig.json",
+              "publish": true,
+              "override": true
+           }
+        ]           
+    }
+}
