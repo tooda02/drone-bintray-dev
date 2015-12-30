@@ -12,15 +12,13 @@ build:
     - go get
     - go build -ldflags="-s -w -X main.buildDate '$buildDate'"
     - go test
-	- cp drone-bintray-dev drone-bintray
-	- ls -l
 
 publish:
   docker:
     username: $$DOCKER_USERNAME
     password: $$DOCKER_PASSWORD
     email: $$DOCKER_EMAIL
-    repo: tooda02/drone-bintray
+    repo: tooda02/drone-bintray-dev
     when:
       branch: master
 
