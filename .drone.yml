@@ -13,7 +13,6 @@ build:
     - go build -ldflags="-s -w -X main.buildDate '$buildDate'"
     - go test
 	- mv drone-bintray-dev drone-bintray
-    - ls -l
 
 publish:
   docker:
