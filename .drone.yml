@@ -18,7 +18,7 @@ publish:
     username: $$DOCKER_USERNAME
     password: $$DOCKER_PASSWORD
     email: $$DOCKER_EMAIL
-    repo: tooda02/drone-bintray-dev
+    repo: tooda02/drone-bintray
     when:
       branch: master
 

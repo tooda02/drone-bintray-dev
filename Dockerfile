@@ -5,6 +5,6 @@
 
 FROM alpine:3.3
 RUN apk update && apk add ca-certificates
-ADD drone-bintray /bin/
+ADD drone-bintray-dev /bin/
 #COPY ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
-ENTRYPOINT ["/bin/drone-bintray"]
+ENTRYPOINT ["/bin/drone-bintray-dev"]
